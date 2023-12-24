@@ -8,11 +8,12 @@
     - restaurant/booking/
     - restaurant/booking/<id>
 
-But before you test you need to `authenticate` yourself with `djoser`.
+## Steps for testing
 
-For this purpose you need to create a user or use an already created user to get a token
-
-You can use `wasihunageru` as both username and password for test purposes
+1. `create` a user by making a post request to `auth/users/new/`  with `username` and `password` value provided.
+2. You can check if the user is successfully created by visiting `auth/users/me' route
+2. Make a get request to `auth/token/login` to get your token. You need to provide username and email
+3. Make a get request to 'restaurant/menu' with your token
 
 ### Get token demo
 

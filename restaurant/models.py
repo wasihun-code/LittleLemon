@@ -8,7 +8,7 @@ class Booking(models.Model):
     booking_date = models.DateField()
 
     def __str__(self):
-        return f"{self.name} - {self.n_guests} on {self.booking_date}"
+        return f"{self.name} - {self.n_guests} guests"
 
 
 class Menu(models.Model):

@@ -1,0 +1,63 @@
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+  /* width: 70%; */
+}
+
+header > .img {
+  aspect-ratio: 1.98;
+  object-fit: contain;
+  object-position: center;
+  width: 300px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+header > nav {
+  align-self: center;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 40px;
+  /* margin: auto 0; */
+  margin: -30px 0;
+  padding: 0 20px; 
+}
+
+header > nav > a {
+  justify-content: center;
+  color: var(--highlight-b-color);
+  text-align: center;
+  align-self: center;
+  flex-grow: 1;
+  white-space: nowrap;
+  margin: auto 0;
+
+  font: 700 32px Markazi Text, -apple-system, Roboto, Helvetica,
+    sans-serif;
+  text-decoration: none;
+}
+
+  @media (max-width: 991px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 991px) {
+    header > nav {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .div-3 {
+      white-space: initial;
+    }
+  }

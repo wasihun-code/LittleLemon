@@ -1,17 +1,24 @@
+// Header.js
 import React from 'react';
+import './Header.css';
+import logo from '../imgs/Logo .svg';
 
 export default function Header() {
   return (
-    <header>
-        <img src='/public/imgs/Logo .svg' alt="Logo" />
-        <nav>
-            <li> <a href='/'> Home </a> </li>
-            <li> <a href='/about'> About </a> </li>
-            <li> <a href='/menu'> Menu </a> </li>
-            <li> <a href='/reservation'> Reservation </a> </li>
-            <li> <a href='/order_online'> Order Online </a> </li>
-            <li> <a href='/Login'> Login </a> </li>
+    <header className="div">
+        <img
+          src={logo}
+          className="img"
+          alt="img"
+        />
+        <nav className="div-2">
+          <a href='/'>Home</a>
+          <a href='/'>About</a>
+          <a href='/'>Menu</a>
+          <a href='/'>Reservation</a>
+          <a href='/'>Order Online</a>
+          <a href='/'>Login</a>
         </nav>
-    </header>
-  )
+  </header>
+  );
 }

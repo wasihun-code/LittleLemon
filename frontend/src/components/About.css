@@ -1,0 +1,83 @@
+.about {
+  gap: 20px;
+  display: flex;
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.about > .column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 64%;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .about > .column {
+    width: 100%;
+  }
+}
+
+.about > .column > h1 {
+  color: #f4ce14;
+  font: 700 96px Markazi Text, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .about > .column > h1{
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+.about > .column > h3 {
+  color: #000;
+  margin-top: 32px;
+  font: 400 40px Markazi Text, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .about > .column > h3 {
+    max-width: 100%;
+  }
+}
+.about > .column > .text {
+  color: #000;
+  margin-top: 56px;
+  font: 400 24px Karla, sans-serif;
+}
+@media (max-width: 991px) {
+  .about > .column > .text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 36%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .column-2 {
+    width: 100%;
+  }
+}
+.about > .column-2 > .img {
+  aspect-ratio: 0.93;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .about > .column-2 > .img {
+    margin-top: 40px;
+  }
+}

@@ -1,17 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import React from "react";
+import "./App.css";
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Highlights from "./components/Highlights";
+import Testimonials from "./components/Testimonials";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
-function App() {
-    return (
-        <>
-            <Header />
-            <Main />
-            <Footer />
-        </>
-    );
-}
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Highlights />
+      <Testimonials />
+      <About />
+      <Footer />
+    </>
+  );
+};

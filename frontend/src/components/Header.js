@@ -13,7 +13,7 @@ export default function Header() {
         />
         <nav className="div-2">
           <a href='/'>Home</a>
-          <a href='/'>About</a>
+          <a href='/about'>About</a>
           <a href='/'>Menu</a>
           <a href='/'>Reservation</a>
           <a href='/'>Order Online</a>

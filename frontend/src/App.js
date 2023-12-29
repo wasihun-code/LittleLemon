@@ -1,22 +1,23 @@
-import React from "react";
-import "./App.css";
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Highlights from "./components/Highlights";
-import Testimonials from "./components/Testimonials";
-import About from "./components/About";
-import Footer from "./components/Footer";
-
+// App.js
+import React from 'react';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import BookingPage from './pages/BookingPage';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <About />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
       <Footer />
     </>
   );
-};
+}

@@ -15,7 +15,7 @@ export default function Header() {
           <a href='/'>Home</a>
           <a href='/about'>About</a>
           <a href='/'>Menu</a>
-          <a href='/'>Reservation</a>
+          <a href='/booking'>Reservation</a>
           <a href='/'>Order Online</a>
           <a href='/'>Login</a>
         </nav>

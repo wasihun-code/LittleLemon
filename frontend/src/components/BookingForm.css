@@ -1,0 +1,137 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > h1 {
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #0c4529;
+  width: 95%;
+  align-items: center;
+  padding: 30px;
+  font: 700 55px  Markazi Text, -apple-system, Roboto, Helvetica,
+  sans-serif;
+  border-radius: 20px;
+  margin-top: -30px;
+}
+@media (max-width: 991px) {
+  form > h1{
+    white-space: initial;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+form > .row-2 {
+  border-radius: 30px;
+  background-color: #e9e9e9;
+  align-self: center;
+  display: flex;
+  margin-top: 27px;
+  width: 70%;
+  max-width: 1146px;
+  flex-direction: column;
+  padding: 50px 70px 50px 80px;
+  margin: 40px auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  form > .row-2 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+form > .row-2 > .field {
+  align-self: stretch;
+  display: flex;
+  margin-top: 26px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  form > .row-2 > .field {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+form > .row-2 > .field > label {
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  margin: auto 0;
+  font: 700 36px  Markazi Text, -apple-system, Roboto, Helvetica,
+  sans-serif;
+}
+
+input, select {
+  border-radius: 16px;
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  width: 500px;
+  max-width: 100%;
+  height: 70px;
+  flex-direction: column;
+  font: 400 36px Karla, sans-serif;
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+
+
+input[type="date"], input[type="number"] {
+  box-sizing: border-box; /* Include padding in the width */
+}
+input,
+select {
+  /* ... existing styles ... */
+  flex-direction: row; /* Remove this line */
+}
+
+
+@media (max-width: 991px) {
+  input, select {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+
+
+form > .row-2 > button {
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #f4ce14;
+  align-self: center;
+  margin: 56px 0 6px;
+  padding: 20px;
+  font: 700 25px Inter, sans-serif;
+}
+@media (max-width: 991px) {
+  form > .row-2 > button {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+input:hover {
+  border-color: #666; /* Darken border on hover */
+}
+
+button:hover {
+  cursor: pointer;
+}
+form > .row-2 > p {
+  align-self: center;
+  justify-self: center;
+  /* margin-top: 35px; */
+  margin-top: 10px;
+  color: red;
+}

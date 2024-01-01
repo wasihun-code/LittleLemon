@@ -12,15 +12,15 @@ import AboutPage from './pages/AboutPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <App />,
     children: [
         {
-          path: "/about",
+          path: "*/about",
           element: <AboutPage />
         },
         {
-          path: "/booking",
+          path: "*/booking",
           element: <BookingPage />
         },
     ]

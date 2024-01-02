@@ -135,3 +135,15 @@ form > .row-2 > p {
   margin-top: 10px;
   color: red;
 }
+
+form > .row-2 > button:disabled {
+  justify-content: center;
+  color: rgb(149, 148, 148);
+  text-align: center;
+  border-radius: 16px;
+  background-color: #f4ce14;
+  align-self: center;
+  margin: 56px 0 6px;
+  padding: 20px;
+  font: 700 25px Inter, sans-serif;
+}

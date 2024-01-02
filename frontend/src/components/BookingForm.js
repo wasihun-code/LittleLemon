@@ -7,8 +7,9 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
   const [occasion, setOccasion] = useState('');
   const [date, setDate] = useState('');
   const [availableTime, setAvailableTime] = useState('');
-  const [n_guests, setNGuests] = useState(1);
+  const [n_guests, setNGuests] = useState();
   const [errorMessage, setErrorMessage] = useState('');
+  const allFieldsFilled = !(occasion && date && availableTime && n_guests);
 
   const currentDate = new Date().toISOString().split('T')[0]; // Get current date in "YYYY-MM-DD" format
   const navigator = useNavigate();
@@ -28,7 +29,7 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!occasion || !date || !availableTime || !n_guests) {
+    if (!occasion && !date && !availableTime && !n_guests) {
       setErrorMessage('Please fill in all required fields');
       return;
     }
@@ -64,6 +65,7 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
         <div className="field">
           <label htmlFor="res-occasion">Occasion</label>
           <select
+            required
             id="res-occasion"
             value={occasion}
             onChange={handleSetOccasion}
@@ -78,6 +80,7 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
         <div className="field">
           <label htmlFor="res-date">Choose Date</label>
           <input
+            required
             type="date"
             id="res-date"
             value={date}
@@ -87,9 +90,10 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
         </div>
 
         <div className="field">
-          <label htmlFor="res-availableTime">Choose availableTime</label>
+          <label htmlFor="res-time">Choose Time</label>
           <select
-            id="res-availableTime"
+            required
+            id="res-time"
             value={availableTime}
             onChange={(e) => setAvailableTime(e.target.value)}
           >
@@ -103,6 +107,7 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
         <div className="field">
           <label htmlFor="guests">Number of guest</label>
           <input
+            required
             type="number"
             placeholder="1"
             min="1"
@@ -113,7 +118,12 @@ export default function BookingPage({ onReservationSubmit, availableTimes, occas
           />
         </div>
 
-        <button type="submit">Make Your Reservation</button>
+        <button 
+          type="submit" 
+          aria-label="On Click" 
+          disabled={allFieldsFilled}>
+            Make Your Reservation
+        </button>
         {<p>{errorMessage}</p>}
       </div>
     </form>

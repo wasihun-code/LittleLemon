@@ -2,6 +2,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../imgs/Logo .svg';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -12,12 +13,12 @@ export default function Header() {
           alt="img"
         />
         <nav className="div-2">
-          <a href='/'>Home</a>
-          <a href='/about'>About</a>
-          <a href='/'>Menu</a>
-          <a href='/booking'>Reservation</a>
-          <a href='/'>Order Online</a>
-          <a href='/'>Login</a>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/'>Menu</Link>
+          <Link to='/booking'>Reservation</Link>
+          <Link to='/'>Order Online</Link>
+          <Link to='/'>Login</Link>
         </nav>
   </header>
   );

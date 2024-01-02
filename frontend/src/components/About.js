@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import * as React from "react";
 import './About.css';
-
+import marioandadrian from '../imgs/Mario and Adrian A.jpg'
 
 export default function About(props) {
   return (
@@ -25,7 +25,7 @@ export default function About(props) {
           <div className="column-2">
             <img
               loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/fcdf2de25179fd60ee20199aedbbb9d8c02e8a8875866992d0889bc82c814bf8?apiKey=fd5f70311d6e4631913a50062159fe38&"
+              src={marioandadrian}
               className="img"
             />
           </div>

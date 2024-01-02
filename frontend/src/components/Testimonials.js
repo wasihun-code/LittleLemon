@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import './Testimonials.css';
-
 export default function Testimonials() {
   return (
       <section className="div testimonial">
